@@ -20,6 +20,7 @@ Start by creating an Azure role definition. Below is an example definition, repl
         "Microsoft.Resources/providers/read",
         "Microsoft.ContainerService/containerServices/read",
         "Microsoft.Commerce/RateCard/read"
+        "Microsoft.Compute/disks/read"
     ],
     "AssignableScopes": [
         "/subscriptions/YOUR_SUBSCRIPTION_ID"
@@ -40,7 +41,7 @@ az role definition create --verbose --role-definition @myrole.json
 Next, create an Azure Service Principal.
 
 ```shell
-az ad sp create-for-rbac --name "KubecostAccess" --role "KubecostRole" --scope "/subscriptions/YOUR_SUBSCRIPTION_ID" --output json
+az ad sp create-for-rbac --name "api://KubecostAccess" --role "KubecostRole" --scope "/subscriptions/YOUR_SUBSCRIPTION_ID" --output json
 ```
 
 Keep this information which is used in the service-key.json below.
