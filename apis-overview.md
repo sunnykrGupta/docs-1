@@ -50,7 +50,7 @@ The Events API provides a log of different occurrences in your workload in order
 
 Savings endpoints provide cost optimization insights. The following savings endpoints are available at `http://<kubecost-address>/model/ENDPOINT`:
 
-| Endpoint                                                                                                                       | Brief description                                                                                                        |
+| Endpoint                                                                                                                       | Description                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | `/savings`                                                                                                                     | Provides cluster-level potential savings estimates based on specific savings opportunities available in other endpoints. |
 | [`/savings/requestSizingV2`](https://docs.kubecost.com/apis/apis-overview/api-request-right-sizing-v2)                         | Provides recommendations for setting container resource requests.                                                        |
@@ -58,7 +58,7 @@ Savings endpoints provide cost optimization insights. The following savings endp
 | `/projectAddresses`                                                                                                            | List orphaned IP addresses.                                                                                              |
 | [`/savings/abandonedWorkloads`](api-abandoned-workloads.md)                                                                    | List abandoned workloads based on network traffic.                                                                       |
 | `/savings/clusterSizingETL`                                                                                                    | Provides recommendations for sizing clusters (node types and quantities).                                                |
-| [Container Request Recommendation "Apply" APIs](https://docs.kubecost.com/apis/apis-overview/api-request-recommendation-apply) | Applies Kubecost's container request recommendations to your cluster.                                                    |
+| [`/savings/requestSizingV2`](https://docs.kubecost.com/apis/apis-overview/api-request-recommendation-apply) | Provides container request right-sizing recommendations to your cluster.                                                    |
 
 ## Kubecost UI counterparts
 
