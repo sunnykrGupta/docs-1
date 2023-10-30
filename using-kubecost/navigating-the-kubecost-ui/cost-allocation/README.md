@@ -97,7 +97,7 @@ For more information, refer to the [OpenCost spec](https://github.com/opencost/o
 
 ### Step size
 
-Step size refers to the size of each bar of data displayed on your dashboard. Options are _Default_, _Daily_, and _Weekly_. When retaining long periods of data through custom configurations (such as Prometheus), consider using larger step sizes to avoid display errors.
+Step size refers to the size of each bar of data displayed on your dashboard. Options are _Default_, _Daily_, _Weekly_, and _Monthly_. When retaining long periods of data through custom configurations (such as Prometheus), consider using larger step sizes to avoid display errors.
 
 ### Filters
 
